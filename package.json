@@ -1,0 +1,34 @@
+{
+    "name":        "installed-packages",
+    "version":     "0.9.0",
+    "description": "Determine names of all installed packages",
+    "keywords":    [ "install", "package", "name" ],
+    "main":        "installed-packages.js",
+    "repository": {
+        "type": "git",
+        "url":  "https://github.com/rse/installed-packages.git"
+    },
+    "author": {
+        "name":  "Ralf S. Engelschall",
+        "email": "rse@engelschall.com",
+        "url":   "http://engelschall.com"
+    },
+    "license":  "MIT",
+    "homepage": "https://github.com/rse/installed-packages",
+    "bugs":     "https://github.com/rse/installed-packages/issues",
+    "devDependencies": {
+        "eslint":            "~3.7.1",
+        "babel-eslint":      "~7.0.0"
+    },
+    "dependencies": {
+        "co":                "~4.6.0",
+        "fs-promise":        "~0.5.0",
+        "builtin-modules":   "~1.1.1"
+    },
+    "engines": {
+        "node":              ">=6.4.0"
+    },
+    "scripts": {
+        "prepublish": "eslint --config eslint.json installed-packages"
+    }
+}
