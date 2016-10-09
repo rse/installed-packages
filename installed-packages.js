@@ -24,7 +24,7 @@
 
 /*  built-in requirements  */
 var path           = require("path")
-var npm            = require("npm")
+var childProcess   = require("child_process")
 
 /*  external requirements  */
 var fs             = require("fs-promise")
@@ -66,9 +66,11 @@ const installedPackages = co.wrap(function * (cache) {
 
     /*  determine global NPM package directory  */
     let globalDir = yield new Promise((resolve, reject) => {
-        npm.load((err, npm) => {
-            if (err) reject(err)
-            else     resolve(npm.globalDir)
+        childProcess.exec("npm --loglevel=silent root -g", {}, (error, stdout /*, stderr */) => {
+            if (error)
+                return reject(error)
+            let dir = stdout.replace(/^\s+/, "").replace(/\s+$/, "")
+            resolve(dir)
         })
     })
 
@@ -118,7 +120,7 @@ const installedPackages = co.wrap(function * (cache) {
     /*  de-duplicate packages  */
     packages = packages.filter((elem, pos) => {
         return packages.indexOf(elem) === pos
-    })
+    }).sort()
 
     return packages
 })
