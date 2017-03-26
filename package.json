@@ -17,12 +17,12 @@
     "homepage": "https://github.com/rse/installed-packages",
     "bugs":     "https://github.com/rse/installed-packages/issues",
     "devDependencies": {
-        "eslint":            "~3.14.1",
-        "babel-eslint":      "~7.1.1"
+        "eslint":            "~3.18.0",
+        "babel-eslint":      "~7.2.1"
     },
     "dependencies": {
         "co":                "~4.6.0",
-        "fs-promise":        "~1.0.0",
+        "fs-promise":        "~2.0.2",
         "builtin-modules":   "~1.1.1"
     },
     "engines": {
