@@ -27,7 +27,7 @@ var path           = require("path")
 var childProcess   = require("child_process")
 
 /*  external requirements  */
-var fs             = require("fs-promise")
+var fs             = require("mz/fs")
 var co             = require("co")
 var builtinModules = require("builtin-modules")
 
