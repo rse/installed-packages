@@ -17,7 +17,7 @@
     "homepage": "https://github.com/rse/installed-packages",
     "bugs":     "https://github.com/rse/installed-packages/issues",
     "devDependencies": {
-        "eslint":            "~3.19.0",
+        "eslint":            "~4.0.0",
         "babel-eslint":      "~7.2.3"
     },
     "dependencies": {
