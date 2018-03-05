@@ -44,7 +44,7 @@ const installedPackages = co.wrap(function * (cache) {
         let packages = []
 
         /*  iterate over all files in directory  */
-        let items = yield fs.readdir(dir)
+        let items = yield fs.readdir(dir).catch(() => [])
         for (let i = 0; i < items.length; i++) {
 
             /*  in case the file is a directory  */
