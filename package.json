@@ -17,13 +17,13 @@
     "homepage": "https://github.com/rse/installed-packages",
     "bugs":     "https://github.com/rse/installed-packages/issues",
     "devDependencies": {
-        "eslint":            "~4.19.1",
-        "babel-eslint":      "~8.2.2"
+        "eslint":            "4.19.1",
+        "babel-eslint":      "8.2.2"
     },
     "dependencies": {
-        "co":                "~4.6.0",
-        "mz":                "~2.7.0",
-        "builtin-modules":   "~2.0.0"
+        "co":                "4.6.0",
+        "mz":                "2.7.0",
+        "builtin-modules":   "2.0.0"
     },
     "engines": {
         "node":              ">=6.4.0"
