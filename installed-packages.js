@@ -30,6 +30,7 @@ var childProcess   = require("child_process")
 var fs             = require("mz/fs")
 var co             = require("co")
 var builtinModules = require("builtin-modules")
+var npmExecute     = require("npm-execute")
 
 /*  the single API method  */
 const installedPackages = co.wrap(function * (cache) {
@@ -64,17 +65,9 @@ const installedPackages = co.wrap(function * (cache) {
     /*  determine all built-in modules  */
     packages = packages.concat(builtinModules)
 
-    /*  determine global NPM package directory  */
-    let globalDir = yield new Promise((resolve, reject) => {
-        childProcess.exec("npm --loglevel=silent root -g", {}, (error, stdout /*, stderr */) => {
-            if (error)
-                return reject(error)
-            let dir = stdout.replace(/^\s+/, "").replace(/\s+$/, "")
-            resolve(dir)
-        })
-    })
-
     /*  determine all globally installed NPM packages  */
+    let result = yield npmExecute([ "--loglevel=silent", "root", "-g" ])
+    let globalDir = result.stdout.replace(/^\s+/, "").replace(/\s+$/, "")
     let p = yield findAllPackagesInDir(globalDir)
     packages = packages.concat(p)
 

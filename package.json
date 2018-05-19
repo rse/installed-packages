@@ -23,7 +23,8 @@
     "dependencies": {
         "co":                "4.6.0",
         "mz":                "2.7.0",
-        "builtin-modules":   "2.0.0"
+        "builtin-modules":   "2.0.0",
+        "npm-execute":       "0.9.2"
     },
     "engines": {
         "node":              ">=6.4.0"
