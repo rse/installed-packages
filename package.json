@@ -30,6 +30,6 @@
         "node":              ">=6.4.0"
     },
     "scripts": {
-        "prepublishOnly": "eslint --config eslint.json installed-packages"
+        "prepublishOnly": "eslint --config eslint.json installed-packages.js"
     }
 }
