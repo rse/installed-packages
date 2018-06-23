@@ -17,13 +17,13 @@
     "homepage": "https://github.com/rse/installed-packages",
     "bugs":     "https://github.com/rse/installed-packages/issues",
     "devDependencies": {
-        "eslint":            "4.19.1",
-        "babel-eslint":      "8.2.3"
+        "eslint":            "5.0.0",
+        "babel-eslint":      "8.2.5"
     },
     "dependencies": {
         "co":                "4.6.0",
         "mz":                "2.7.0",
-        "builtin-modules":   "2.0.0",
+        "builtin-modules":   "3.0.0",
         "npm-execute":       "0.9.2"
     },
     "engines": {
