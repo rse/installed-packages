@@ -24,7 +24,6 @@
 
 /*  built-in requirements  */
 var path           = require("path")
-var childProcess   = require("child_process")
 
 /*  external requirements  */
 var fs             = require("mz/fs")
