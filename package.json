@@ -17,7 +17,7 @@
     "homepage": "https://github.com/rse/installed-packages",
     "bugs":     "https://github.com/rse/installed-packages/issues",
     "devDependencies": {
-        "eslint":            "5.6.1",
+        "eslint":            "5.11.0",
         "babel-eslint":      "10.0.1"
     },
     "dependencies": {
@@ -27,7 +27,7 @@
         "npm-execute":       "0.9.3"
     },
     "engines": {
-        "node":              ">=6.4.0"
+        "node":              ">=8.0.0"
     },
     "scripts": {
         "prepublishOnly": "eslint --config eslint.json installed-packages.js"
