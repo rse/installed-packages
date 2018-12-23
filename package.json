@@ -1,6 +1,6 @@
 {
     "name":        "installed-packages",
-    "version":     "1.0.3",
+    "version":     "1.0.4",
     "description": "Determine names of all installed packages",
     "keywords":    [ "install", "package", "name" ],
     "main":        "installed-packages.js",
