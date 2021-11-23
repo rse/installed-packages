@@ -24,7 +24,7 @@
         "co":                "4.6.0",
         "mz":                "2.7.0",
         "builtin-modules":   "3.2.0",
-        "npm-execute":       "0.9.9"
+        "npm-execute":       "0.9.10"
     },
     "engines": {
         "node":              ">=8.0.0"
