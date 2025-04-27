@@ -6,7 +6,7 @@
     "main":        "installed-packages.js",
     "repository": {
         "type": "git",
-        "url":  "https://github.com/rse/installed-packages.git"
+        "url":  "git+https://github.com/rse/installed-packages.git"
     },
     "author": {
         "name":  "Dr. Ralf S. Engelschall",
