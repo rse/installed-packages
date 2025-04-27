@@ -4,6 +4,7 @@
     "description": "Determine names of all installed packages",
     "keywords":    [ "install", "package", "name" ],
     "main":        "installed-packages.js",
+    "types":       "installed-packages.d.ts",
     "repository": {
         "type": "git",
         "url":  "git+https://github.com/rse/installed-packages.git"
