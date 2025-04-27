@@ -28,7 +28,7 @@ var path           = require("path")
 /*  external requirements  */
 var fs             = require("mz/fs")
 var co             = require("co")
-var builtinModules = require("builtin-modules")
+var builtinModules = require("builtin-modules").default
 var npmExecute     = require("npm-execute")
 
 /*  the single API method  */
